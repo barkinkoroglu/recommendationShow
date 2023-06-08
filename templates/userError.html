@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-1200-80.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .error-container {
+        width: 300px;
+        margin: 150px auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .error-message {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .try-again {
+        display: flex;
+        justify-content: center;
+      }
+
+      .try-again button {
+        padding: 8px 16px;
+        background-color: #e50914;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .try-again button:hover {
+        background-color: #b2070a;
+      }
+      .signature {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        color: #fff;
+        font-size: 12px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <p class="error-message">
+        No data found for the user {{ username }}. Please try again.
+      </p>
+      <div class="try-again">
+        <button onclick="window.history.back()">Try Again</button>
+      </div>
+    </div>
+    <div class="signature">Made by Barkın Köroğlu</div>
+  </body>
+</html>

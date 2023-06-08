@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recommendations</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome, {{ username }}!</h2>
+      <h1>Recommendations For You</h1>
+      <div class="recommendations">
+        <ul>
+          {% for title, poster in zip(recommendations, posters) %}
+          <li>
+            {% if poster %}
+            <img src="{{ poster }}" alt="{{ recommendation }} Poster" />
+            {% else %}
+            <p class="filmname">No poster available</p>
+            {% endif %}
+            <a href="/recommend/{{ title  }}">{{ title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

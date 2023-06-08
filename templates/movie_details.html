@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Details</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="recommendations">
+        <h1>WATCH</h1>
+        <ul>
+          {% for movie_poster in tittle_movie_poster %}
+          <li>
+            {% if movie_poster %}
+            <img src="{{ movie_poster }}" alt="{{ title }} movie_poster" />
+            {% else %}
+            <p>No poster available</p>
+            {% endif %}
+            <a href="/recommend/{{ title }}">{{ title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="recommendations">
+        <h1>SIMILAR SHOWS</h1>
+        <ul>
+          {% for mtitle, poster in zip(similar_shows, posters) %}
+          <li>
+            {% if poster %}
+            <img src="{{ poster }}" alt="{{ recommendation }} Poster" />
+            {% else %}
+            <p class="filmname">No poster available</p>
+            {% endif %}
+            <a href="/recommend/{{ mtitle }}">{{ mtitle }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
