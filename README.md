@@ -25,8 +25,8 @@ The user can click on the desired show and see the most-watched shows associated
 
 <p align="center">Figure 4. Similar Shows Page </p>
 
-Flask Application Report
-This report describes the outline and features of a Flask-based movie/TV show recommendation application. The application aims to provide personalized recommendations based on the content users have watched. The functionality is explained through the following steps:
+ 
+The functionality is explained through the following steps:
 
 <h1>Importing Required Libraries and Modules:</h1> Flask, pandas, sklearn, mlxtend, and other relevant libraries are included in the application.
 Loading the Dataset: Data related to the content watched by users is loaded from the "viewer_df.csv" file. The dataset includes information such as movie/TV show titles, watch percentages, country details, and dates.
