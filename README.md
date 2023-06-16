@@ -3,25 +3,25 @@
 
 First, the user is accessing http://barkinkoroglu.pythonanywhere.com website. The user is expected to enter their username and log in. We checked the mock viewer data (viewer_df.csv) for the username they provided. If the username exists in the data, they are logged into the system.
 
-![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/a114a0b5-7021-4652-bb69-50d3483dc8fa)
+![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/9da96a7e-9f19-4937-a987-e0c8a3c6ea4b)
 
 <p align="center">Figure 1. Login Page </p>
 
 If such a username does not exist, we provide an error message as shown below and ask them to try again.
 
-![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/a5703d58-beb1-42eb-9f13-c9ee9385a91d)
+![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/ab995443-e73b-4064-8670-28746459f2d4)
 
 <p align="center">Figure 2. No data found Page </p>
 
 When the user logs in, they are shown 5 shows based on the shows they have previously watched. These shows are randomly selected from the top 20 most-watched shows in their cluster.
  
- ![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/17ec1059-07a5-4a9c-88d6-0c40a6d46a38)
+ ![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/28347231-3240-4715-b1ea-5465454bb261)
 
-<p align="center">Figure 3. Recoomendations Page </p>
+<p align="center">Figure 3. Recommendations Page </p>
 
 The user can click on the desired show and see the most-watched shows associated with the opened show (up to a maximum of 7 shows) through association learning.
  
- ![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/acfa2738-4d1e-409c-8ad4-f90f88fadedd)
+ ![image](https://github.com/barkinkoroglu/recommendationShow/assets/54675420/7d69ea16-1f33-4ca4-8ff6-9865c0639eab)
 
 <p align="center">Figure 4. Similar Shows Page </p>
 
